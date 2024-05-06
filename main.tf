@@ -15,6 +15,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "charindut-TFResourceGroup"
-  location = "eastus2"
+  name     = var.resource_group_name
+  location = var.resource_group_location
 }
